@@ -128,7 +128,7 @@
             return nil;
         }
 
-        if (enclosureURLString) {
+        if (enclosureURLString && enclosureURLString.length) {
             NSString *fileURLString = [[enclosureURLString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
             self.fileURL = [NSURL URLWithString:fileURLString];
         }

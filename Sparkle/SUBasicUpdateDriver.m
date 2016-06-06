@@ -460,12 +460,27 @@
     if ([updaterDelegate respondsToSelector:@selector(pathToRelaunchForUpdater:)]) {
         pathToRelaunch = [updaterDelegate pathToRelaunchForUpdater:self.updater];
     }
-    [NSTask launchedTaskWithLaunchPath:relaunchToolPath arguments:@[[self.host bundlePath],
-                                                                    pathToRelaunch,
-                                                                    [NSString stringWithFormat:@"%d", [[NSProcessInfo processInfo] processIdentifier]],
-                                                                    self.tempDir,
-                                                                    relaunch ? @"1" : @"0",
-                                                                    showUI ? @"1" : @"0"]];
+    @try {
+        [NSTask launchedTaskWithLaunchPath:relaunchToolPath arguments:@[[self.host bundlePath],
+                                                                        pathToRelaunch,
+                                                                        [NSString stringWithFormat:@"%d", [[NSProcessInfo processInfo] processIdentifier]],
+                                                                        self.tempDir,
+                                                                        relaunch ? @"1" : @"0",
+                                                                        showUI ? @"1" : @"0"]];
+    }
+    @catch (NSException* e) {
+        // Note that we explicitly use the host app's name here, since updating plugin for Mail relaunches Mail, not just the plugin.
+        [self abortUpdateWithError:[NSError
+                                    errorWithDomain:SUSparkleErrorDomain
+                                    code:SURelaunchError
+                                    userInfo:@{
+                                               NSLocalizedDescriptionKey: [NSString stringWithFormat:SULocalizedString(@"An error occurred while relaunching %1$@, but the new version will be available next time you run %1$@.", nil), [self.host name]],
+                                               NSLocalizedFailureReasonErrorKey: [NSString stringWithFormat:@"An exception occured launching %@ (%@)", self.relaunchPath, e]
+                                               }]];
+        // We intentionally don't abandon the update here so that the host won't initiate another.
+        return;
+    }
+
     [self terminateApp];
 }
 

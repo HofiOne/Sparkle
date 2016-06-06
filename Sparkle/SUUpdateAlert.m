@@ -177,8 +177,13 @@
         [self.window setLevel:NSFloatingWindowLevel]; // This means the window will float over all other apps, if our app is switched out ?!
     }
 
-    if ([self.updateItem fileURL] == nil) {
-        [self.installButton setTitle:SULocalizedString(@"Learn More...", @"Alternate title for 'Install Update' button when there's no download in RSS feed.")];
+    // Bound originally to self.updateItem fileURL but better to use allowsAutomaticUpdates
+    // That way fileURL can be used for supporting late registration
+    // and can be used for enabling the button and checkbox pair if fileURL not available YET
+    // (not registered, no duwnload url received/associated)
+    //
+    if (![self allowsAutomaticUpdates]) { //if ([self.updateItem fileURL] == nil) {
+        [self.installButton setTitle:SULocalizedString(@"Get Update", @"Alternate title for 'Install Update' button when there's no download in RSS feed.")];
         [self.installButton setAction:@selector(openInfoURL:)];
     }
 
@@ -222,7 +227,9 @@
 	else {
         [self.versionDisplayer formatVersion:&updateItemVersion andVersion:&hostVersion];
     }
-    return [NSString stringWithFormat:SULocalizedString(@"%@ %@ is now available--you have %@. Would you like to download it now?", nil), [self.host name], updateItemVersion, hostVersion];
+    return [NSString stringWithFormat:SULocalizedString(@"%@ %@ is now available, you have %@.%@", nil),
+            [self.host name], updateItemVersion, hostVersion,
+            ([self.updateItem fileURL] != nil) ? @" Would you like to download and install it now?" : @""];
 }
 
 - (void)webView:(WebView *)sender didFinishLoadForFrame:frame

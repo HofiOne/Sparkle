@@ -26,6 +26,11 @@
 @synthesize statusController;
 @synthesize updateAlert;
 
+- (BOOL)isInterruptible
+{
+    return YES;
+}
+
 - (void)didFindValidUpdate
 {
     self.updateAlert = [[SUUpdateAlert alloc] initWithAppcastItem:self.updateItem host:self.host completionBlock:^(SUUpdateAlertChoice choice) {
@@ -214,6 +219,12 @@
 	{
         [self.statusController close];
         self.statusController = nil;
+    }
+    if (self.updateAlert)
+    {
+        [self.updateAlert close];
+        self.updateAlert = nil;
+        [self.host setObject:nil forUserDefaultsKey:SUSkippedVersionKey];
     }
     [super abortUpdate];
 }

@@ -52,6 +52,8 @@
 
     // Note that kSecCSCheckNestedCode may not work with pre-Mavericks code signing.
     // See https://github.com/sparkle-project/Sparkle/issues/376#issuecomment-48824267 and https://developer.apple.com/library/mac/technotes/tn2206
+    // Note that this also might fail if you try to update your debug version with a release version or vica-versa, because of the different codesigning identity they were signed with.
+    //
 	SecCSFlags flags = kSecCSDefaultFlags | kSecCSCheckAllArchitectures;
     result = SecStaticCodeCheckValidityWithErrors(staticCode, flags, requirement, &cfError);
 
