@@ -461,12 +461,14 @@
         pathToRelaunch = [updaterDelegate pathToRelaunchForUpdater:self.updater];
     }
     @try {
-        [NSTask launchedTaskWithLaunchPath:relaunchToolPath arguments:@[[self.host bundlePath],
-                                                                        pathToRelaunch,
-                                                                        [NSString stringWithFormat:@"%d", [[NSProcessInfo processInfo] processIdentifier]],
-                                                                        self.tempDir,
-                                                                        relaunch ? @"1" : @"0",
-                                                                        showUI ? @"1" : @"0"]];
+    NSArray* params = @[[self.host bundlePath],
+                        pathToRelaunch,
+                        [NSString stringWithFormat:@"%d", [[NSProcessInfo processInfo] processIdentifier]],
+                        self.tempDir,
+                        relaunch ? @"1" : @"0",
+                        showUI ? @"1" : @"0"];
+        [NSTask launchedTaskWithLaunchPath:relaunchToolPath arguments:params];
+        SULog(@"The %@ launched with params: [%@]", relaunchToolPath, params);
     }
     @catch (NSException* e) {
         // Note that we explicitly use the host app's name here, since updating plugin for Mail relaunches Mail, not just the plugin.
