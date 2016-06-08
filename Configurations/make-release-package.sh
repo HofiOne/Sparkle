@@ -24,4 +24,10 @@ if [ "$ACTION" = "" ] ; then
     # Sorted file list groups similar files together, which improves tar compression
     find . \! -type d | rev | sort | rev | tar cjvf "../Sparkle-$CURRENT_PROJECT_VERSION.tar.bz2" --files-from=-
     rm -rf "$CONFIGURATION_BUILD_DIR/staging"
+
+
+    cp "$SRCROOT/CHANGELOG" "$SRCROOT/LICENSE" "$SRCROOT/Sparkle.podspec" "$CONFIGURATION_BUILD_DIR"
+    rm -Rf "$CONFIGURATION_BUILD_DIR/Sparkle Test App.app"
+    rm -Rf "$CONFIGURATION_BUILD_DIR/Sparkle Test App.app.dSYM"
+    rm -Rf "$CONFIGURATION_BUILD_DIR/Sparkle-$CURRENT_PROJECT_VERSION.tar.bz2"
 fi

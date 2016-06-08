@@ -180,8 +180,13 @@
         [self.window setLevel:NSFloatingWindowLevel]; // This means the window will float over all other apps, if our app is switched out ?!
     }
 
-    if (self.updateItem.isInformationOnlyUpdate) {
-        [self.installButton setTitle:SULocalizedString(@"Learn More...", @"Alternate title for 'Install Update' button when there's no download in RSS feed.")];
+    // Bound originally to self.updateItem fileURL but better to use allowsAutomaticUpdates
+    // That way fileURL can be used for supporting late registration
+    // and can be used for enabling the button and checkbox pair if fileURL not available YET
+    // (not registered, no duwnload url received/associated)
+    //
+    if (![self allowsAutomaticUpdates]) { //if ([self.updateItem fileURL] == nil) {
+        [self.installButton setTitle:SULocalizedString(@"Get Update", @"Alternate title for 'Install Update' button when there's no download in RSS feed.")];
         [self.installButton setAction:@selector(openInfoURL:)];
     }
 
@@ -242,7 +247,11 @@
     if (self.updateItem.isInformationOnlyUpdate) {
         finalString = [NSString stringWithFormat:SULocalizedString(@"%@ %@ is now available--you have %@. Would you like to learn more about this update on the web?", @"Description text for SUUpdateAlert when the update informational with no download."), self.host.name, updateItemVersion, hostVersion];
     } else {
-        finalString = [NSString stringWithFormat:SULocalizedString(@"%@ %@ is now available--you have %@. Would you like to download it now?", @"Description text for SUUpdateAlert when the update is downloadable."), self.host.name, updateItemVersion, hostVersion];
+        //finalString = [NSString stringWithFormat:SULocalizedString(@"%@ %@ is now available--you have %@. Would you like to download it now?", @"Description text for SUUpdateAlert when the update is downloadable."), self.host.name, updateItemVersion, hostVersion];
+        finalString = [NSString stringWithFormat:SULocalizedString(@"%@ %@ is now available, you have %@.%@", @"Description text for SUUpdateAlert when the update is downloadable."),
+                       self.host.name, updateItemVersion, hostVersion,
+                       ([self.updateItem fileURL] != nil) ? @" Would you like to download and install it now?" : @""];
+
     }
     return finalString;
 }
