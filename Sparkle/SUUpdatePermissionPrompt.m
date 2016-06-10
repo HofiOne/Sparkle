@@ -14,7 +14,6 @@
 @interface SUUpdatePermissionPrompt ()
 
 @property (assign) BOOL isShowingMoreInfo;
-@property (assign) BOOL shouldShowMoreInfo;
 @property (assign) BOOL shouldSendProfile;
 
 @property (strong) SUHost *host;
@@ -42,11 +41,6 @@
 - (BOOL)shouldAskAboutProfile
 {
     return [[self.host objectForInfoDictionaryKey:SUEnableSystemProfilingKey] boolValue];
-}
-
-- (BOOL)shouldShowMoreInfo
-{
-    return NO; // Till not sending the default profile infos doo not show them
 }
 
 - (instancetype)initWithHost:(SUHost *)aHost systemProfile:(NSArray *)profile delegate:(id<SUUpdatePermissionPromptDelegate>)d
