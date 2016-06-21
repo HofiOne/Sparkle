@@ -196,6 +196,10 @@ static NSString *const SUUpdaterDefaultsObservationContext = @"SUUpdaterDefaults
         [SUUpdatePermissionPrompt promptWithHost:self.host systemProfile:profileInfo delegate:self];
         // We start the update checks and register as observer for changes after the prompt finishes
     } else {
+        // If we do not want to bother then also lie about the last update check time to delay the next scheduled update check too
+        if (NO == hasLaunchedBefore && NO == [self.host objectForKey:SUPromptUserOnFirstLaunchKey])
+            [self.host setObject:[NSDate date] forUserDefaultsKey:SULastCheckTimeKey];
+        
         // We check if the user's said they want updates, or they haven't said anything, and the default is set to checking.
         [self scheduleNextUpdateCheck];
     }
