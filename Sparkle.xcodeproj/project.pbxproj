@@ -213,6 +213,7 @@
 		C23E885B1BE7B24F0050BB73 /* SparkleTestCodeSignApp.enc.dmg in Resources */ = {isa = PBXBuildFile; fileRef = C23E88591BE7AF890050BB73 /* SparkleTestCodeSignApp.enc.dmg */; };
 		D64B57B11D08B7720090D452 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 61C268090E2DB5D000175E6C /* LICENSE */; };
 		D64B57B21D08B7760090D452 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 61C268090E2DB5D000175E6C /* LICENSE */; };
+		D6C6DE5B1E8440B500CC6AFE /* SUConstants.m in Headers */ = {isa = PBXBuildFile; fileRef = 61299A5F09CA6EB100B7442F /* SUConstants.m */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8761EB11ADC5068000C9034 /* SUCodeSigningVerifierTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8761EB01ADC5068000C9034 /* SUCodeSigningVerifierTest.m */; };
 		F8761EB31ADC50EB000C9034 /* SparkleTestCodeSignApp.zip in Resources */ = {isa = PBXBuildFile; fileRef = F8761EB21ADC50EB000C9034 /* SparkleTestCodeSignApp.zip */; };
 		F8761EB61ADC5E7A000C9034 /* SUCodeSigningVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B078CD15A5FB6100600039 /* SUCodeSigningVerifier.m */; };
@@ -1178,6 +1179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				611142E910FB1BE5009810AA /* bspatch.h in Headers */,
+				D6C6DE5B1E8440B500CC6AFE /* SUConstants.m in Headers */,
 				61299A5C09CA6D4500B7442F /* SUConstants.h in Headers */,
 				6160E7E10D3B4A8800E9CD71 /* NTSynchronousTask.h in Headers */,
 				61299B3609CB04E000B7442F /* Sparkle.h in Headers */,
