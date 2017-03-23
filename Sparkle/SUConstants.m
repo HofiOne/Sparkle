@@ -21,6 +21,10 @@
 const NSTimeInterval SUMinimumUpdateCheckInterval = DEBUG ? 60 : (60 * 60);
 const NSTimeInterval SUDefaultUpdateCheckInterval = DEBUG ? 60 : (60 * 60 * 24);
 
+// HAck to be able to iclude this file as it is
+#if !defined(SPARKLE_BUNDLE_IDENTIFIER)
+#define SPARKLE_BUNDLE_IDENTIFIER "org.sparkle-project.Sparkle"
+#endif
 NSString *const SUBundleIdentifier = @SPARKLE_BUNDLE_IDENTIFIER;
 
 NSString *const SUTechnicalErrorInformationKey = @"SUTechnicalErrorInformation";
