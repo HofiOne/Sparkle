@@ -10,6 +10,7 @@
 #define SUUPDATEPERMISSIONPROMPT_H
 
 #import <Cocoa/Cocoa.h>
+#import "SUWindowController.h"
 
 typedef NS_ENUM(NSInteger, SUPermissionPromptResult) {
     SUAutomaticallyCheck,
@@ -19,7 +20,7 @@ typedef NS_ENUM(NSInteger, SUPermissionPromptResult) {
 @protocol SUUpdatePermissionPromptDelegate;
 
 @class SUHost, SUUpdatePermissionResponse;
-@interface SUUpdatePermissionPrompt : NSWindowController
+@interface SUUpdatePermissionPrompt : SUWindowController
 
 + (void)promptWithHost:(SUHost *)host systemProfile:(NSArray *)profile reply:(void (^)(SUUpdatePermissionResponse *))reply;
 

@@ -11,6 +11,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "SUVersionDisplayProtocol.h"
+#import "SUWindowController.h"
 
 @protocol SUUpdateAlertDelegate;
 
@@ -22,7 +23,7 @@ typedef NS_ENUM(NSInteger, SUUpdateAlertChoice) {
 };
 
 @class SUAppcastItem, SUHost;
-@interface SUUpdateAlert : NSWindowController
+@interface SUUpdateAlert : SUWindowController
 
 @property (weak) id<SUVersionDisplay> versionDisplayer;
 

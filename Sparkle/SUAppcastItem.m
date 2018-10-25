@@ -148,7 +148,7 @@
         }
 
         NSString *enclosureURLString = [enclosure objectForKey:SURSSAttributeURL];
-        if (!enclosureURLString && !theInfoURL) {
+        if ((enclosureURLString == nil || enclosureURLString.length == 0) && (theInfoURL == nil || theInfoURL.length == 0)) {
             if (error) {
                 *error = @"Feed item's enclosure lacks URL";
             }

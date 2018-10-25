@@ -55,6 +55,10 @@
     }
     return self;
 }
+- (BOOL)isInterruptible
+{
+    return YES;
+}
 
 - (BOOL)shouldShowUpdateAlertForItem:(SUAppcastItem *)__unused item {
     return YES;
@@ -377,6 +381,12 @@
 	{
         [self.statusController close];
         self.statusController = nil;
+    }
+    if (self.updateAlert)
+    {
+        [self.updateAlert close];
+        self.updateAlert = nil;
+        [self.host setObject:nil forUserDefaultsKey:SUSkippedVersionKey];
     }
     [super abortUpdate];
 }
