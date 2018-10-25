@@ -96,7 +96,7 @@
 		5D1AF5900FD767AD0065DB48 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1AF58F0FD767AD0065DB48 /* libxml2.dylib */; };
 		5D1AF59A0FD767E50065DB48 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1AF5990FD767E50065DB48 /* libz.dylib */; };
 		5D1AF82B0FD768180065DB48 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1AF5990FD767E50065DB48 /* libz.dylib */; };
-		5F1510A21C96E591006E1629 /* testnamespaces.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5F1510A11C96E591006E1629 /* testnamespaces.xml */; settings = {ASSET_TAGS = (); }; };
+		5F1510A21C96E591006E1629 /* testnamespaces.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5F1510A11C96E591006E1629 /* testnamespaces.xml */; };
 		610134730DD250470049ACDF /* SUUpdateDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 610134710DD250470049ACDF /* SUUpdateDriver.h */; settings = {ATTRIBUTES = (); }; };
 		610134740DD250470049ACDF /* SUUpdateDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 610134720DD250470049ACDF /* SUUpdateDriver.m */; };
 		6101347B0DD2541A0049ACDF /* SUProbingUpdateDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 610134790DD2541A0049ACDF /* SUProbingUpdateDriver.h */; settings = {ATTRIBUTES = (); }; };
@@ -108,13 +108,13 @@
 		610EC1E00CF3A5FE00AE239E /* NTSynchronousTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 610EC1BF0CF3914D00AE239E /* NTSynchronousTask.m */; };
 		611142E910FB1BE5009810AA /* bspatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 611142E810FB1BE5009810AA /* bspatch.h */; };
 		61177A1F0D1112E900749C97 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6117796E0D1112E000749C97 /* IOKit.framework */; };
-		61180BCA0D64138900B4E0D1 /* SUWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 61180BC80D64138900B4E0D1 /* SUWindowController.h */; settings = {ATTRIBUTES = (); }; };
+		61180BCA0D64138900B4E0D1 /* SUWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 61180BC80D64138900B4E0D1 /* SUWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61180BCB0D64138900B4E0D1 /* SUWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61180BC90D64138900B4E0D1 /* SUWindowController.m */; };
 		6120721209CC5C4B007FE0F6 /* SUAutomaticUpdateAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 6120721009CC5C4B007FE0F6 /* SUAutomaticUpdateAlert.h */; settings = {ATTRIBUTES = (); }; };
 		6120721309CC5C4B007FE0F6 /* SUAutomaticUpdateAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 6120721109CC5C4B007FE0F6 /* SUAutomaticUpdateAlert.m */; };
 		61299A2F09CA2DAB00B7442F /* SUDSAVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 61299A2D09CA2DAB00B7442F /* SUDSAVerifier.h */; settings = {ATTRIBUTES = (); }; };
 		61299A3009CA2DAB00B7442F /* SUDSAVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 61299A2E09CA2DAB00B7442F /* SUDSAVerifier.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
-		61299A5C09CA6D4500B7442F /* SUConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 61299A5B09CA6D4500B7442F /* SUConstants.h */; settings = {ATTRIBUTES = (); }; };
+		61299A5C09CA6D4500B7442F /* SUConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 61299A5B09CA6D4500B7442F /* SUConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61299A6009CA6EB100B7442F /* SUConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 61299A5F09CA6EB100B7442F /* SUConstants.m */; };
 		61299A8D09CA790200B7442F /* SUUnarchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 61299A8B09CA790200B7442F /* SUUnarchiver.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		61299A8E09CA790200B7442F /* SUUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 61299A8C09CA790200B7442F /* SUUnarchiver.m */; };
@@ -211,6 +211,9 @@
 		767B61AE1972D488004E0C3C /* SUGuidedPackageInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B61AB1972D488004E0C3C /* SUGuidedPackageInstaller.m */; };
 		A5BF4F1D1BC7668B007A052A /* SUTestWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BF4F1C1BC7668B007A052A /* SUTestWebServer.m */; };
 		C23E885B1BE7B24F0050BB73 /* SparkleTestCodeSignApp.enc.dmg in Resources */ = {isa = PBXBuildFile; fileRef = C23E88591BE7AF890050BB73 /* SparkleTestCodeSignApp.enc.dmg */; };
+		D64B57B11D08B7720090D452 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 61C268090E2DB5D000175E6C /* LICENSE */; };
+		D64B57B21D08B7760090D452 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 61C268090E2DB5D000175E6C /* LICENSE */; };
+		D6C6DE5B1E8440B500CC6AFE /* SUConstants.m in Headers */ = {isa = PBXBuildFile; fileRef = 61299A5F09CA6EB100B7442F /* SUConstants.m */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8761EB11ADC5068000C9034 /* SUCodeSigningVerifierTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8761EB01ADC5068000C9034 /* SUCodeSigningVerifierTest.m */; };
 		F8761EB31ADC50EB000C9034 /* SparkleTestCodeSignApp.zip in Resources */ = {isa = PBXBuildFile; fileRef = F8761EB21ADC50EB000C9034 /* SparkleTestCodeSignApp.zip */; };
 		F8761EB61ADC5E7A000C9034 /* SUCodeSigningVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B078CD15A5FB6100600039 /* SUCodeSigningVerifier.m */; };
@@ -1176,6 +1179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				611142E910FB1BE5009810AA /* bspatch.h in Headers */,
+				D6C6DE5B1E8440B500CC6AFE /* SUConstants.m in Headers */,
+				61299A5C09CA6D4500B7442F /* SUConstants.h in Headers */,
 				6160E7E10D3B4A8800E9CD71 /* NTSynchronousTask.h in Headers */,
 				61299B3609CB04E000B7442F /* Sparkle.h in Headers */,
 				61CFB3290E385186007A1735 /* Sparkle.pch in Headers */,
@@ -1183,10 +1188,10 @@
 				61B5FC7009C51F4A00B25A18 /* SUAppcastItem.h in Headers */,
 				6120721209CC5C4B007FE0F6 /* SUAutomaticUpdateAlert.h in Headers */,
 				61B93B270DD0FDD300DCD2F8 /* SUAutomaticUpdateDriver.h in Headers */,
+				61180BCA0D64138900B4E0D1 /* SUWindowController.h in Headers */,
 				61F83F740DBFE141006FDD30 /* SUBasicUpdateDriver.h in Headers */,
 				5D06E9390FD69271005AE3F6 /* SUBinaryDeltaUnarchiver.h in Headers */,
 				61B078CE15A5FB6100600039 /* SUCodeSigningVerifier.h in Headers */,
-				61299A5C09CA6D4500B7442F /* SUConstants.h in Headers */,
 				6102FE4A0E07803800F85D09 /* SUDiskImageUnarchiver.h in Headers */,
 				61299A2F09CA2DAB00B7442F /* SUDSAVerifier.h in Headers */,
 				55E6F33319EC9F6C00005E76 /* SUErrors.h in Headers */,
@@ -1217,7 +1222,6 @@
 				61A354550DF113C70076ECB1 /* SUUserInitiatedUpdateDriver.h in Headers */,
 				61A2259E0D1C495D00430CCD /* SUVersionComparisonProtocol.h in Headers */,
 				3772FEA913DE0B6B00F79537 /* SUVersionDisplayProtocol.h in Headers */,
-				61180BCA0D64138900B4E0D1 /* SUWindowController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1490,6 +1494,7 @@
 			files = (
 				1420DF51196247F900203BB0 /* Images.xcassets in Resources */,
 				55C14FC7136F05E100649790 /* Sparkle.strings in Resources */,
+				D64B57B11D08B7720090D452 /* LICENSE in Resources */,
 				55C14BD9136EF00C00649790 /* SUStatus.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1524,6 +1529,7 @@
 				61AAE8280A321A7F00D8810D /* Sparkle.strings in Resources */,
 				55C14BEE136EF20D00649790 /* SUAutomaticUpdateAlert.xib in Resources */,
 				615AE3D00D64DC40001CA7BD /* SUModelTranslation.plist in Resources */,
+				D64B57B21D08B7760090D452 /* LICENSE in Resources */,
 				55C14BEF136EF21700649790 /* SUStatus.xib in Resources */,
 				55C14C04136EF26100649790 /* SUUpdateAlert.xib in Resources */,
 				55C14C19136EF2C700649790 /* SUUpdatePermissionPrompt.xib in Resources */,
@@ -2110,6 +2116,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CF0D94A70100DD942E /* ConfigCommonDebug.xcconfig */;
 			buildSettings = {
+				BUILD_DIR = "$(SRCROOT)/..";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(EFFECTIVE_PLATFORM_NAME)";
 			};
 			name = Debug;
 		};
@@ -2117,6 +2125,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CC0D94A70100DD942E /* ConfigCommonRelease.xcconfig */;
 			buildSettings = {
+				BUILD_DIR = "$(SRCROOT)/..";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(EFFECTIVE_PLATFORM_NAME)";
 			};
 			name = Release;
 		};
@@ -2205,6 +2215,149 @@
 			};
 			name = Release;
 		};
+		D6AA8AF621650FB9009E46A5 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941CF0D94A70100DD942E /* ConfigCommonDebug.xcconfig */;
+			buildSettings = {
+				BUILD_DIR = "$(SRCROOT)/..";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(EFFECTIVE_PLATFORM_NAME)";
+			};
+			name = "Debug Standalone";
+		};
+		D6AA8AF721650FB9009E46A5 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941CA0D94A70100DD942E /* ConfigFrameworkDebug.xcconfig */;
+			buildSettings = {
+			};
+			name = "Debug Standalone";
+		};
+		D6AA8AF821650FB9009E46A5 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941CB0D94A70100DD942E /* ConfigTestAppDebug.xcconfig */;
+			buildSettings = {
+			};
+			name = "Debug Standalone";
+		};
+		D6AA8AF921650FB9009E46A5 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3AAF3A1050B273004B3130 /* ConfigUnitTestDebug.xcconfig */;
+			buildSettings = {
+			};
+			name = "Debug Standalone";
+		};
+		D6AA8AFA21650FB9009E46A5 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D06E8F20FD68D21005AE3F6 /* ConfigBinaryDeltaDebug.xcconfig */;
+			buildSettings = {
+			};
+			name = "Debug Standalone";
+		};
+		D6AA8AFB21650FB9009E46A5 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941D30D94A70100DD942E /* ConfigRelaunchDebug.xcconfig */;
+			buildSettings = {
+			};
+			name = "Debug Standalone";
+		};
+		D6AA8AFC21650FB9009E46A5 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Debug Standalone";
+		};
+		D6AA8AFD21650FB9009E46A5 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Debug Standalone";
+		};
+		D6AA8AFE21650FB9009E46A5 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Debug Standalone";
+		};
+		D6AA8AFF21650FB9009E46A5 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729F10FF1C65A9B500DFCCC5 /* ConfigUITestDebug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Standalone";
+		};
+		D6AA8B0021651113009E46A5 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941CC0D94A70100DD942E /* ConfigCommonRelease.xcconfig */;
+			buildSettings = {
+				BUILD_DIR = "$(SRCROOT)/..";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(EFFECTIVE_PLATFORM_NAME)";
+			};
+			name = "Release Standalone";
+		};
+		D6AA8B0121651113009E46A5 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941D50D94A70100DD942E /* ConfigFrameworkRelease.xcconfig */;
+			buildSettings = {
+			};
+			name = "Release Standalone";
+		};
+		D6AA8B0221651113009E46A5 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941D20D94A70100DD942E /* ConfigTestAppRelease.xcconfig */;
+			buildSettings = {
+			};
+			name = "Release Standalone";
+		};
+		D6AA8B0321651113009E46A5 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3AAF391050B273004B3130 /* ConfigUnitTestRelease.xcconfig */;
+			buildSettings = {
+			};
+			name = "Release Standalone";
+		};
+		D6AA8B0421651113009E46A5 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D06E8F30FD68D21005AE3F6 /* ConfigBinaryDeltaRelease.xcconfig */;
+			buildSettings = {
+			};
+			name = "Release Standalone";
+		};
+		D6AA8B0521651113009E46A5 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941D40D94A70100DD942E /* ConfigRelaunchRelease.xcconfig */;
+			buildSettings = {
+			};
+			name = "Release Standalone";
+		};
+		D6AA8B0621651113009E46A5 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Release Standalone";
+		};
+		D6AA8B0721651113009E46A5 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Release Standalone";
+		};
+		D6AA8B0821651113009E46A5 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Release Standalone";
+		};
+		D6AA8B0921651113009E46A5 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729F11001C65A9B500DFCCC5 /* ConfigUITestRelease.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+			};
+			name = "Release Standalone";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2212,8 +2365,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1420DF4B1962329200203BB0 /* Debug */,
+				D6AA8AFD21650FB9009E46A5 /* Debug Standalone */,
 				149B78611B7D398100D7D62C /* Coverage */,
 				1420DF4C1962329200203BB0 /* Release */,
+				D6AA8B0721651113009E46A5 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2222,8 +2377,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14732BC71960F69300593899 /* Debug */,
+				D6AA8AFC21650FB9009E46A5 /* Debug Standalone */,
 				149B78601B7D398100D7D62C /* Coverage */,
 				14732BC81960F69300593899 /* Release */,
+				D6AA8B0621651113009E46A5 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2232,8 +2389,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14950061195FB89500BC5B5B /* Debug */,
+				D6AA8AFE21650FB9009E46A5 /* Debug Standalone */,
 				149B78621B7D398100D7D62C /* Coverage */,
 				14950062195FB89500BC5B5B /* Release */,
+				D6AA8B0821651113009E46A5 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2242,8 +2401,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB91AE08733DA50010E9CD /* Debug */,
+				D6AA8AF721650FB9009E46A5 /* Debug Standalone */,
 				149B785B1B7D398100D7D62C /* Coverage */,
 				1DEB91AF08733DA50010E9CD /* Release */,
+				D6AA8B0121651113009E46A5 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2252,8 +2413,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Debug */,
+				D6AA8AF621650FB9009E46A5 /* Debug Standalone */,
 				149B785A1B7D398100D7D62C /* Coverage */,
 				1DEB91B308733DA50010E9CD /* Release */,
+				D6AA8B0021651113009E46A5 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2262,8 +2425,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55C14BBB136EEF1500649790 /* Debug */,
+				D6AA8AFB21650FB9009E46A5 /* Debug Standalone */,
 				149B785F1B7D398100D7D62C /* Coverage */,
 				55C14BBC136EEF1500649790 /* Release */,
+				D6AA8B0521651113009E46A5 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2272,8 +2437,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D06E8D20FD68C7D005AE3F6 /* Debug */,
+				D6AA8AFA21650FB9009E46A5 /* Debug Standalone */,
 				149B785E1B7D398100D7D62C /* Coverage */,
 				5D06E8D30FD68C7D005AE3F6 /* Release */,
+				D6AA8B0421651113009E46A5 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2282,8 +2449,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				612279DB0DB5470300AB99EA /* Debug */,
+				D6AA8AF921650FB9009E46A5 /* Debug Standalone */,
 				149B785D1B7D398100D7D62C /* Coverage */,
 				612279DC0DB5470300AB99EA /* Release */,
+				D6AA8B0321651113009E46A5 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2292,8 +2461,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				61B5F90609C4CEE300B25A18 /* Debug */,
+				D6AA8AF821650FB9009E46A5 /* Debug Standalone */,
 				149B785C1B7D398100D7D62C /* Coverage */,
 				61B5F90709C4CEE300B25A18 /* Release */,
+				D6AA8B0221651113009E46A5 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2302,8 +2473,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				726B2B641C645FC900388755 /* Debug */,
+				D6AA8AFF21650FB9009E46A5 /* Debug Standalone */,
 				726B2B651C645FC900388755 /* Coverage */,
 				726B2B661C645FC900388755 /* Release */,
+				D6AA8B0921651113009E46A5 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

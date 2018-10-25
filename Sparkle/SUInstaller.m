@@ -153,6 +153,7 @@
         if (!error) {
             error = [NSError errorWithDomain:SUSparkleErrorDomain code:SUInstallationError userInfo:nil];
         }
+        SULog(@"%@", error);
         dispatch_async(dispatch_get_main_queue(), ^{
             completionHandler(error);
         });

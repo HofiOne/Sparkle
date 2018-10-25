@@ -50,6 +50,11 @@
     return self;
 }
 
+- (BOOL)isInterruptible
+{
+    return YES;
+}
+
 - (void)didFindValidUpdate
 {
     if ([[self.updater delegate] respondsToSelector:@selector(updater:didFindValidUpdate:)]) {
@@ -266,6 +271,12 @@
 	{
         [self.statusController close];
         self.statusController = nil;
+    }
+    if (self.updateAlert)
+    {
+        [self.updateAlert close];
+        self.updateAlert = nil;
+        [self.host setObject:nil forUserDefaultsKey:SUSkippedVersionKey];
     }
     [super abortUpdate];
 }
