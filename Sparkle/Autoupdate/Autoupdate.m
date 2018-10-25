@@ -233,7 +233,9 @@ int main(int __unused argc, const char __unused *argv[])
     @autoreleasepool
     {
         NSArray<NSString *> *args = [[NSProcessInfo processInfo] arguments];
-        if (args.count < 5 || args.count > 7) {
+        SULog(SULogLevelDefault, @"Autoupdate launched with params: [%@]", args);
+        
+        if (args.count < 5 || args.count > (DEBUG ? 9 : 7)) {
             return EXIT_FAILURE;
         }
         

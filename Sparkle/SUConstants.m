@@ -25,9 +25,14 @@ NSString *const SUAppcastAttributeValueMacOS = @"macos";
 
 NSString *const SUTechnicalErrorInformationKey = @"SUTechnicalErrorInformation";
 
+// HAck to be able to iclude this file as it is
+#if !defined(SPARKLE_BUNDLE_IDENTIFIER)
+#define SPARKLE_BUNDLE_IDENTIFIER "org.sparkle-project.Sparkle"
+#endif
 NSString *const SUHasLaunchedBeforeKey = @"SUHasLaunchedBefore";
 NSString *const SUUpdateRelaunchingMarkerKey = @"SUUpdateRelaunchingMarker";
 NSString *const SUFeedURLKey = @"SUFeedURL";
+NSString *const SUDownloadURLKey = @"SUDownloadURL";
 NSString *const SUShowReleaseNotesKey = @"SUShowReleaseNotes";
 NSString *const SUSkippedVersionKey = @"SUSkippedVersion";
 NSString *const SUScheduledCheckIntervalKey = @"SUScheduledCheckInterval";

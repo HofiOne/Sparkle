@@ -56,6 +56,11 @@
     return self;
 }
 
+- (BOOL)isInterruptible
+{
+    return YES;
+}
+
 - (void)didFindValidUpdate
 {
     id<SUUpdaterPrivate> updater = self.updater;
@@ -333,6 +338,12 @@
 	{
         [self.statusController close];
         self.statusController = nil;
+    }
+    if (self.updateAlert)
+    {
+        [self.updateAlert close];
+        self.updateAlert = nil;
+        [self.host setObject:nil forUserDefaultsKey:SUSkippedVersionKey];
     }
     [super abortUpdate];
 }

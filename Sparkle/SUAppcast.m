@@ -279,8 +279,23 @@
             }
         }
 
+        // Cheating a bit and let the developer set the fileURL from local settings
+        // that can be used for supporting late registration f.e.
+        // and can be used for enabling the button and checkbox pair if fileURL not available YET
+        // (not registered, no download url received/associated)
+        //
+        NSMutableDictionary *enclosure = [dict objectForKey:SURSSElementEnclosure];
+        NSString *enclosureURLString = [enclosure objectForKey:SURSSAttributeURL];
+        
+        if (enclosureURLString.length == 0) {
+            NSString *customDownloadURL = [[NSUserDefaults standardUserDefaults] objectForKey:SUDownloadURLKey];
+            if (customDownloadURL.length)
+                [enclosure setObject:customDownloadURL forKey:SURSSAttributeURL];
+        }
+        
         NSString *errString;
         SUAppcastItem *anItem = [[SUAppcastItem alloc] initWithDictionary:dict failureReason:&errString];
+
         if (anItem) {
             [appcastItems addObject:anItem];
 		}
