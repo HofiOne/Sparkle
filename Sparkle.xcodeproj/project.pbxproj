@@ -2162,7 +2162,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# To support Pod build from local source for ourself\nditto \"$CONFIGURATION_BUILD_DIR/Sparkle.framework\" \"$SRCROOT/../Sparkle.framework\"\ncp \"$SRCROOT/CHANGELOG\" \"$SRCROOT/LICENSE\" \"$SRCROOT/Sparkle.podspec\" \"$SRCROOT/..\"\n";
+			shellScript = "# To support Pod build from local source for ourself\nditto \"$CONFIGURATION_BUILD_DIR/Sparkle.framework\" \"$SRCROOT/../Sparkle.framework\"\nif [ -d \"$CONFIGURATION_BUILD_DIR/Sparkle.framework.dsym\" ]; then \n    ditto \"$CONFIGURATION_BUILD_DIR/Sparkle.framework.dsym\" \"$SRCROOT/../Sparkle.framework.dsym\"\nfi\ncp \"$SRCROOT/CHANGELOG\" \"$SRCROOT/LICENSE\" \"$SRCROOT/Sparkle.podspec\" \"$SRCROOT/..\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
