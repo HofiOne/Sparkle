@@ -2118,7 +2118,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/Configurations/set-git-version-info.sh\"";
+			shellScript = "\"$SRCROOT/Configurations/set-git-version-info.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6195D4B40E40505A00D41A50 /* Run Script: Link fr_CA to fr */ = {
@@ -2171,7 +2171,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# To support Pod build from local source for ourself\nditto \"$CONFIGURATION_BUILD_DIR/Sparkle.framework\" \"$SRCROOT/../Sparkle.framework\"\nif [ -d \"$CONFIGURATION_BUILD_DIR/Sparkle.framework.dsym\" ]; then \n    ditto \"$CONFIGURATION_BUILD_DIR/Sparkle.framework.dsym\" \"$SRCROOT/../Sparkle.framework.dsym\"\nfi\ncp \"$SRCROOT/CHANGELOG\" \"$SRCROOT/LICENSE\" \"$SRCROOT/Sparkle.podspec\" \"$SRCROOT/..\"\n";
+			shellScript = "if [ \"$ACTION\" != \"clean\" ] ; then\n    # To support Pod build from local source for ourself\n    ditto \"$CONFIGURATION_BUILD_DIR/Sparkle.framework\" \"$SRCROOT/../Sparkle.framework\"\n    if [ -d \"$CONFIGURATION_BUILD_DIR/Sparkle.framework.dsym\" ]; then \n        ditto \"$CONFIGURATION_BUILD_DIR/Sparkle.framework.dsym\" \"$SRCROOT/../Sparkle.framework.dsym\"\n    fi\n    cp \"$SRCROOT/CHANGELOG\" \"$SRCROOT/LICENSE\" \"$SRCROOT/Sparkle.podspec\" \"$SRCROOT/..\"\nelse\n    echo \"Cleaning local Pod build helpers\"\n    rm -Rf \"$SRCROOT/../Sparkle.framework\"\n    rm -Rf \"$SRCROOT/../Sparkle.framework.dsym\"\n    rm \"$SRCROOT/../CHANGELOG\" \"$SRCROOT/../LICENSE\" \"$SRCROOT/../Sparkle.podspec\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
