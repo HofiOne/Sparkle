@@ -52,6 +52,7 @@ SU_EXPORT extern NSString *const SUAllowsAutomaticUpdatesKey;
 SU_EXPORT extern NSString *const SUEnableAutomaticChecksKey;
 SU_EXPORT extern NSString *const SUEnableSystemProfilingKey;
 SU_EXPORT extern NSString *const SUSendProfileInfoKey;
+SU_EXPORT extern NSString *const SUUpdateGroupIdentifierKey;
 SU_EXPORT extern NSString *const SULastProfileSubmitDateKey;
 SU_EXPORT extern NSString *const SUPromptUserOnFirstLaunchKey;
 SU_EXPORT extern NSString *const SUDefaultsDomainKey;
@@ -72,8 +73,7 @@ SU_EXPORT extern NSString *const SUAppcastAttributeEDSignature;
 SU_EXPORT extern NSString *const SUAppcastAttributeShortVersionString;
 SU_EXPORT extern NSString *const SUAppcastAttributeVersion;
 SU_EXPORT extern NSString *const SUAppcastAttributeOsType;
-
-
+SU_EXPORT extern NSString *const SUAppcastAttributePhasedRolloutInterval;
 
 SU_EXPORT extern NSString *const SUAppcastElementCriticalUpdate;
 SU_EXPORT extern NSString *const SUAppcastElementDeltas;

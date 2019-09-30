@@ -65,17 +65,22 @@ class ArchiveItem: CustomStringConvertible {
     }
 
     convenience init(fromArchive archivePath: URL, unarchivedDir: URL) throws {
-        let items = try FileManager.default.contentsOfDirectory(atPath: unarchivedDir.path)
-            .filter({ !$0.hasPrefix(".") })
-            .map({ unarchivedDir.appendingPathComponent($0) })
+        let resourceKeys = [URLResourceKey.typeIdentifierKey]
+        let items = try FileManager.default.contentsOfDirectory(at: unarchivedDir, includingPropertiesForKeys: resourceKeys, options: .skipsHiddenFiles)
 
-        let apps = items.filter({ $0.pathExtension == "app" });
-        if apps.count > 0 {
-            if apps.count > 1 {
-                throw makeError(code: .unarchivingError, "Too many apps in \(unarchivedDir.path) \(apps)");
+        let bundles = items.filter({
+            if let resourceValues = try? $0.resourceValues(forKeys: Set(resourceKeys)) {
+                return UTTypeConformsTo(resourceValues.typeIdentifier! as CFString, kUTTypeBundle)
+            } else {
+                return false
+            }
+        });
+        if bundles.count > 0 {
+            if bundles.count > 1 {
+                throw makeError(code: .unarchivingError, "Too many bundles in \(unarchivedDir.path) \(bundles)");
             }
 
-            let appPath = apps[0];
+            let appPath = bundles[0];
             guard let infoPlist = NSDictionary(contentsOf: appPath.appendingPathComponent("Contents/Info.plist")) else {
                 throw makeError(code: .unarchivingError, "No plist \(appPath.path)");
             }
@@ -88,7 +93,11 @@ class ArchiveItem: CustomStringConvertible {
 
             var feedURL:URL? = nil;
             if let feedURLStr = infoPlist["SUFeedURL"] as? String {
-                feedURL = URL(string: feedURLStr);
+                feedURL = URL(string: feedURLStr)
+                if feedURL?.pathExtension == "php" {
+                    feedURL = feedURL!.deletingLastPathComponent()
+                    feedURL = feedURL!.appendingPathComponent("appcast.xml")
+                }
             }
 
             try self.init(version: version,
