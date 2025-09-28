@@ -2856,7 +2856,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 149B78631B7D3A0C00D7D62C /* ConfigCommonCoverage.xcconfig */;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 			};
 			name = Coverage;
 		};
@@ -2867,6 +2867,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -2876,6 +2877,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CB0D94A70100DD942E /* ConfigTestAppDebug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Coverage;
 		};
@@ -2883,6 +2885,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 149B78641B7D3A4800D7D62C /* ConfigUnitTestCoverage.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Coverage;
 		};
@@ -2890,6 +2893,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D06E8F20FD68D21005AE3F6 /* ConfigBinaryDeltaDebug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Coverage;
 		};
@@ -2897,6 +2901,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941D30D94A70100DD942E /* ConfigRelaunchDebug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Coverage;
 		};
@@ -2925,6 +2930,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -2937,6 +2943,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -2945,7 +2952,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CF0D94A70100DD942E /* ConfigCommonDebug.xcconfig */;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				ONLY_ACTIVE_ARCH = NO;
 			};
 			name = Debug;
@@ -2954,7 +2961,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CC0D94A70100DD942E /* ConfigCommonRelease.xcconfig */;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
@@ -2963,6 +2970,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941D30D94A70100DD942E /* ConfigRelaunchDebug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -2970,6 +2978,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941D40D94A70100DD942E /* ConfigRelaunchRelease.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -2978,6 +2987,7 @@
 			baseConfigurationReference = 5AB8F1AA214DA85900A1187F /* ConfigGenerateKeysDebug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -2989,6 +2999,7 @@
 			baseConfigurationReference = 5AB8F1AA214DA85900A1187F /* ConfigGenerateKeysDebug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -2999,6 +3010,7 @@
 			baseConfigurationReference = 5AB8F1A9214DA85900A1187F /* ConfigGenerateKeysRelease.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -3009,6 +3021,7 @@
 			baseConfigurationReference = 7205C4351E12CA7000E370AE /* ConfigGenerateAppcastDebug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -3017,6 +3030,7 @@
 			baseConfigurationReference = 7205C4351E12CA7000E370AE /* ConfigGenerateAppcastDebug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Coverage;
 		};
@@ -3025,6 +3039,7 @@
 			baseConfigurationReference = 7205C4341E12C66D00E370AE /* ConfigGenerateAppcastRelease.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -3033,6 +3048,7 @@
 			baseConfigurationReference = 5AB8F1AA214DA85900A1187F /* ConfigGenerateKeysDebug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.2;
@@ -3044,6 +3060,7 @@
 			baseConfigurationReference = 5AB8F1AA214DA85900A1187F /* ConfigGenerateKeysDebug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.2;
@@ -3055,6 +3072,7 @@
 			baseConfigurationReference = 5AB8F1A9214DA85900A1187F /* ConfigGenerateKeysRelease.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.2;
@@ -3065,6 +3083,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D06E8F20FD68D21005AE3F6 /* ConfigBinaryDeltaDebug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -3072,6 +3091,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D06E8F30FD68D21005AE3F6 /* ConfigBinaryDeltaRelease.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -3079,6 +3099,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3AAF3A1050B273004B3130 /* ConfigUnitTestDebug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -3086,6 +3107,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA3AAF391050B273004B3130 /* ConfigUnitTestRelease.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -3093,6 +3115,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CB0D94A70100DD942E /* ConfigTestAppDebug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -3100,6 +3123,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941D20D94A70100DD942E /* ConfigTestAppRelease.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -3108,6 +3132,7 @@
 			baseConfigurationReference = 722954C81D04E89500ECF9CA /* ConfigFileop.xcconfig */;
 			buildSettings = {
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -3117,6 +3142,7 @@
 			baseConfigurationReference = 722954C81D04E89500ECF9CA /* ConfigFileop.xcconfig */;
 			buildSettings = {
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Coverage;
@@ -3126,6 +3152,7 @@
 			baseConfigurationReference = 722954C81D04E89500ECF9CA /* ConfigFileop.xcconfig */;
 			buildSettings = {
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -3151,10 +3178,285 @@
 			};
 			name = Release;
 		};
+		D6CF52612C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941CF0D94A70100DD942E /* ConfigCommonDebug.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				ONLY_ACTIVE_ARCH = NO;
+			};
+			name = "Debug Standalone";
+		};
+		D6CF52622C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941CA0D94A70100DD942E /* ConfigFrameworkDebug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Debug Standalone";
+		};
+		D6CF52632C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941CB0D94A70100DD942E /* ConfigTestAppDebug.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Debug Standalone";
+		};
+		D6CF52642C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3AAF3A1050B273004B3130 /* ConfigUnitTestDebug.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Debug Standalone";
+		};
+		D6CF52652C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D06E8F20FD68D21005AE3F6 /* ConfigBinaryDeltaDebug.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Debug Standalone";
+		};
+		D6CF52662C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941D30D94A70100DD942E /* ConfigRelaunchDebug.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Debug Standalone";
+		};
+		D6CF52672C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Debug Standalone";
+		};
+		D6CF52682C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Debug Standalone";
+		};
+		D6CF52692C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Debug Standalone";
+		};
+		D6CF526A2C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729F10FF1C65A9B500DFCCC5 /* ConfigUITestDebug.xcconfig */;
+			buildSettings = {
+			};
+			name = "Debug Standalone";
+		};
+		D6CF526B2C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 722954C81D04E89500ECF9CA /* ConfigFileop.xcconfig */;
+			buildSettings = {
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "Debug Standalone";
+		};
+		D6CF526C2C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7205C4351E12CA7000E370AE /* ConfigGenerateAppcastDebug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Debug Standalone";
+		};
+		D6CF526D2C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB8F1AA214DA85900A1187F /* ConfigGenerateKeysDebug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = "Debug Standalone";
+		};
+		D6CF526E2C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB8F1AA214DA85900A1187F /* ConfigGenerateKeysDebug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = "Debug Standalone";
+		};
+		D6CF526F2C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4311FA229D656700A5503D /* bsdiff-Debug.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Debug Standalone";
+		};
+		D6CF52702C8A2723006CE230 /* Debug Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4311C9229D614300A5503D /* ed25519-Debug.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Debug Standalone";
+		};
+		D6CF52712C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941CC0D94A70100DD942E /* ConfigCommonRelease.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = "Release Standalone";
+		};
+		D6CF52722C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941D50D94A70100DD942E /* ConfigFrameworkRelease.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Release Standalone";
+		};
+		D6CF52732C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941D20D94A70100DD942E /* ConfigTestAppRelease.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Release Standalone";
+		};
+		D6CF52742C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3AAF391050B273004B3130 /* ConfigUnitTestRelease.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Release Standalone";
+		};
+		D6CF52752C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D06E8F30FD68D21005AE3F6 /* ConfigBinaryDeltaRelease.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Release Standalone";
+		};
+		D6CF52762C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1941D40D94A70100DD942E /* ConfigRelaunchRelease.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Release Standalone";
+		};
+		D6CF52772C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Release Standalone";
+		};
+		D6CF52782C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Release Standalone";
+		};
+		D6CF52792C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Release Standalone";
+		};
+		D6CF527A2C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729F11001C65A9B500DFCCC5 /* ConfigUITestRelease.xcconfig */;
+			buildSettings = {
+			};
+			name = "Release Standalone";
+		};
+		D6CF527B2C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 722954C81D04E89500ECF9CA /* ConfigFileop.xcconfig */;
+			buildSettings = {
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "Release Standalone";
+		};
+		D6CF527C2C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7205C4341E12C66D00E370AE /* ConfigGenerateAppcastRelease.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Release Standalone";
+		};
+		D6CF527D2C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB8F1A9214DA85900A1187F /* ConfigGenerateKeysRelease.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = "Release Standalone";
+		};
+		D6CF527E2C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB8F1A9214DA85900A1187F /* ConfigGenerateKeysRelease.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = "Release Standalone";
+		};
+		D6CF527F2C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4311FB229D657A00A5503D /* bsdiff-Release.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Release Standalone";
+		};
+		D6CF52802C8A2787006CE230 /* Release Standalone */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4311C8229D613B00A5503D /* ed25519-Release.xcconfig */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = "Release Standalone";
+		};
 		EA4311A2229D5FBC00A5503D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA4311C9229D614300A5503D /* ed25519-Debug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -3162,6 +3464,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA4311C9229D614300A5503D /* ed25519-Debug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Coverage;
 		};
@@ -3169,6 +3472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA4311C8229D613B00A5503D /* ed25519-Release.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -3176,6 +3480,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA4311FA229D656700A5503D /* bsdiff-Debug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -3183,6 +3488,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA4311FA229D656700A5503D /* bsdiff-Debug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Coverage;
 		};
@@ -3190,6 +3496,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA4311FB229D657A00A5503D /* bsdiff-Release.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -3200,8 +3507,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1420DF4B1962329200203BB0 /* Debug */,
+				D6CF52682C8A2723006CE230 /* Debug Standalone */,
 				149B78611B7D398100D7D62C /* Coverage */,
 				1420DF4C1962329200203BB0 /* Release */,
+				D6CF52782C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3210,8 +3519,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14732BC71960F69300593899 /* Debug */,
+				D6CF52672C8A2723006CE230 /* Debug Standalone */,
 				149B78601B7D398100D7D62C /* Coverage */,
 				14732BC81960F69300593899 /* Release */,
+				D6CF52772C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3220,8 +3531,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14950061195FB89500BC5B5B /* Debug */,
+				D6CF52692C8A2723006CE230 /* Debug Standalone */,
 				149B78621B7D398100D7D62C /* Coverage */,
 				14950062195FB89500BC5B5B /* Release */,
+				D6CF52792C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3230,8 +3543,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB91AE08733DA50010E9CD /* Debug */,
+				D6CF52622C8A2723006CE230 /* Debug Standalone */,
 				149B785B1B7D398100D7D62C /* Coverage */,
 				1DEB91AF08733DA50010E9CD /* Release */,
+				D6CF52722C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3240,8 +3555,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Debug */,
+				D6CF52612C8A2723006CE230 /* Debug Standalone */,
 				149B785A1B7D398100D7D62C /* Coverage */,
 				1DEB91B308733DA50010E9CD /* Release */,
+				D6CF52712C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3250,8 +3567,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55C14BBB136EEF1500649790 /* Debug */,
+				D6CF52662C8A2723006CE230 /* Debug Standalone */,
 				149B785F1B7D398100D7D62C /* Coverage */,
 				55C14BBC136EEF1500649790 /* Release */,
+				D6CF52762C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3260,8 +3579,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A5ADEDC214EDE4900DF0099 /* Debug */,
+				D6CF526E2C8A2723006CE230 /* Debug Standalone */,
 				5A5ADEDD214EDE4900DF0099 /* Coverage */,
 				5A5ADEDE214EDE4900DF0099 /* Release */,
+				D6CF527E2C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3270,8 +3591,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AA96C591E0AE0DC00CA4346 /* Debug */,
+				D6CF526C2C8A2723006CE230 /* Debug Standalone */,
 				5AA96C5A1E0AE0DC00CA4346 /* Coverage */,
 				5AA96C5B1E0AE0DC00CA4346 /* Release */,
+				D6CF527C2C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3280,8 +3603,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AB8F1A4214DA72000A1187F /* Debug */,
+				D6CF526D2C8A2723006CE230 /* Debug Standalone */,
 				5AB8F1A5214DA72000A1187F /* Coverage */,
 				5AB8F1A6214DA72000A1187F /* Release */,
+				D6CF527D2C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3290,8 +3615,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D06E8D20FD68C7D005AE3F6 /* Debug */,
+				D6CF52652C8A2723006CE230 /* Debug Standalone */,
 				149B785E1B7D398100D7D62C /* Coverage */,
 				5D06E8D30FD68C7D005AE3F6 /* Release */,
+				D6CF52752C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3300,8 +3627,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				612279DB0DB5470300AB99EA /* Debug */,
+				D6CF52642C8A2723006CE230 /* Debug Standalone */,
 				149B785D1B7D398100D7D62C /* Coverage */,
 				612279DC0DB5470300AB99EA /* Release */,
+				D6CF52742C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3310,8 +3639,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				61B5F90609C4CEE300B25A18 /* Debug */,
+				D6CF52632C8A2723006CE230 /* Debug Standalone */,
 				149B785C1B7D398100D7D62C /* Coverage */,
 				61B5F90709C4CEE300B25A18 /* Release */,
+				D6CF52732C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3320,8 +3651,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				722954B81D04ADAF00ECF9CA /* Debug */,
+				D6CF526B2C8A2723006CE230 /* Debug Standalone */,
 				722954B91D04ADAF00ECF9CA /* Coverage */,
 				722954BA1D04ADAF00ECF9CA /* Release */,
+				D6CF527B2C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3330,8 +3663,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				726B2B641C645FC900388755 /* Debug */,
+				D6CF526A2C8A2723006CE230 /* Debug Standalone */,
 				726B2B651C645FC900388755 /* Coverage */,
 				726B2B661C645FC900388755 /* Release */,
+				D6CF527A2C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3340,8 +3675,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA4311A2229D5FBC00A5503D /* Debug */,
+				D6CF52702C8A2723006CE230 /* Debug Standalone */,
 				EA4311A3229D5FBC00A5503D /* Coverage */,
 				EA4311A4229D5FBC00A5503D /* Release */,
+				D6CF52802C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3350,8 +3687,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA4311EC229D651300A5503D /* Debug */,
+				D6CF526F2C8A2723006CE230 /* Debug Standalone */,
 				EA4311ED229D651300A5503D /* Coverage */,
 				EA4311EE229D651300A5503D /* Release */,
+				D6CF527F2C8A2787006CE230 /* Release Standalone */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
